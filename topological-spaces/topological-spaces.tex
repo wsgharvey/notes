@@ -20,7 +20,7 @@
   sequence $\{x_n\}_{n=1}^\infty$ of elements in the space such that every
   non-empty open subset of the space contains at least one element of the
   sequence. }{Open subsets are required as in some sense, it is not possible to
-  make them as small as closed subsets: \eg every non-empty open subset of \real
+  make them as small as closed subsets: \eg every non-empty open subset of $\real$
   is uncountable whereas a closed subset can have a single member.}
 
 \definition{Metric space}{
@@ -33,10 +33,14 @@
   \end{enumerate}
   }{Positivity of $d(x, y)$ for all $x \neq y$ follows from these conditions.}
 
-\definition{Complete metric space}{
-  A metric space M is complete if every Cauchy sequence in M has a limit in M. A
-  Cauchy sequence is a sequence $x_1, x_2, \ldots$ such that, for any $\epsilon
-  > 0$, there exists an $N$ such that for any $m, n > N$, $d(x_m, x_n) <
-  \epsilon$.
-  }{For example, the real numbers are a complete metric space while the rational
-    numbers are incomplete.}
+  \definition{Complete metric space}{ A metric space M is complete if every
+    Cauchy sequence in M has a limit in M. A Cauchy sequence is a sequence $x_1,
+    x_2, \ldots$ such that, for any $\epsilon > 0$, there exists an $N$ such
+    that for any $m, n > N$, $d(x_m, x_n) < \epsilon$. }{Intuitively, a space
+    with `no points missing'. For example, the real numbers are a complete
+    metric space while the rational numbers are incomplete.}
+
+  \definition{Completely metrizable space}{
+    A topoological space (X, T) for which there exists a metric d which induces
+    the topology T.
+  }{}
