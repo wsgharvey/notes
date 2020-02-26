@@ -1,0 +1,42 @@
+\chapter{Topological spaces}
+
+% Hello.
+
+% \begin{adjustwidth}{1cm}{}
+%   Hello.
+% \end{adjustwidth}
+
+% Hello.
+
+% \begin{adjustwidth}{1cm}{}
+%   Hello.
+% \end{adjustwidth}
+
+% \begin{adjustwidth}{1cm}{}
+%   Hello.
+% \end{adjustwidth}
+
+\definition{Separable space}{ A space is separable iff. there exists a countable
+  sequence $\{x_n\}_{n=1}^\infty$ of elements in the space such that every
+  non-empty open subset of the space contains at least one element of the
+  sequence. }{Open subsets are required as in some sense, it is not possible to
+  make them as small as closed subsets: \eg every non-empty open subset of \real
+  is uncountable whereas a closed subset can have a single member.}
+
+\definition{Metric space}{
+  A set together with a metric defining a distance between any two points in the
+  set which satisfies:
+  \begin{enumerate}
+  \item identity of indiscernibles: $d(x, y) = 0 \iff x = y$
+  \item symmetry: $d(x, y) = d(y, x)$
+  \item triangle inequality: $d(x, z) \leq d(x, y) + d(y, z)$
+  \end{enumerate}
+  }{Positivity of $d(x, y)$ for all $x \neq y$ follows from these conditions.}
+
+\definition{Complete metric space}{
+  A metric space M is complete if every Cauchy sequence in M has a limit in M. A
+  Cauchy sequence is a sequence $x_1, x_2, \ldots$ such that, for any $\epsilon
+  > 0$, there exists an $N$ such that for any $m, n > N$, $d(x_m, x_n) <
+  \epsilon$.
+  }{For example, the real numbers are a complete metric space while the rational
+    numbers are incomplete.}
